@@ -1,0 +1,31 @@
+.hh-breadcrumb.clearfix(class= bread_class ? "#{bread_class}" : "")
+	ol.clearfix
+		- each breadcrumb , i in breadcrumb_list
+			li
+				if i == breadcrumb_list.length - 1
+					span #{breadcrumb}
+				else
+					a(href="#",title=breadcrumb) #{breadcrumb}
+						i.icon.iconfont.icon-Artboard
+	if no_bread_nav
+	else
+		.hh-bread-nav-wrap
+			a.hh-bread-nav-btn(href="#")
+				i.iconfont.icon-Artboard
+			.hh-bread-nav-inner.hide
+				ul
+					- for(var i=1; i<=8; i++)
+						li
+							a(href="#") 清风雅宅
+
+	if bread_news
+		.hh-bread-zx-nav
+			a.hh-bread-nav-btn(href="javascript:void(0);")
+				i.iconfont.icon-liebiao2
+				| 资讯分类
+
+
+
+
+
+	

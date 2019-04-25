@@ -1,0 +1,11 @@
+{
+  "index": {
+    "title": "住宅网WAP页面列表",
+    "head_no": true,
+    "foot_no": true
+  },
+  "home": {
+    "name": "首页",
+    "title": "首页"
+  }
+}

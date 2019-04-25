@@ -1,0 +1,11 @@
+header.header.clearfix
+	.header-flex
+		.header-flex-item.text-left
+			a.hfi-back-btn(href="javascript:history.go(-1);")
+				i.iconfont.icon-zuojiantou
+		.header-flex-item.text-center
+			if page.title
+				.nav-title #{page.title}
+		.header-flex-item.text-right
+			a.nav-icon.com-popup(href="javascript:void(0);")
+				i.iconfont.icon-liebiao

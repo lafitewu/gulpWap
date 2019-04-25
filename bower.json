@@ -1,0 +1,45 @@
+{
+  "name": "gulp-browserify",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.11.1",
+    "weui": "^1.1.2",
+    "jquery-weui": "^1.2.0",
+    "jieyou_lazyload": "^1.4.1",
+    "art-template": "^3.0.1",
+    "awesome-bootstrap-checkbox": "^0.3.7"
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "dist/jquery.js"
+      ]
+    },
+    "weui": {
+      "main": [
+        "dist/style/weui.css"
+      ]
+    },
+    "jquery-weui": {
+      "main": [
+        "dist/lib/fastclick.js",
+        "dist/css/jquery-weui.css",
+        "dist/js/jquery-weui.js",
+        "dist/js/swiper.js"
+      ]
+    },
+    "jieyou_lazyload": {
+      "main": [
+        "lazyload.js"
+      ]
+    },
+    "art-template": {
+      "main": [
+        "dist/template.js"
+      ]
+    },
+    "awesome-bootstrap-checkbox": {
+      "ignore": true
+    }
+  }
+}

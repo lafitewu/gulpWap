@@ -1,0 +1,30 @@
+{
+  "page1":{
+    "title":"首页",
+    "href":"home.html"
+  },
+  "page2":{
+    "title":"宅基房",
+    "href":"house_list.html"
+  },
+  "page3":{
+    "title":"装配式房",
+    "href":"assembled_list.html"
+  },
+  "page4":{
+    "title":"我要建房",
+    "href":"build.html"
+  },
+  "page5":{
+    "title":"图纸大全",
+    "href":"drawing.html"
+  },
+  "page6":{
+    "title":"资讯",
+    "href":"news_home.html"
+  },
+  "page7":{
+    "title": "联系我们",
+    "href": "contact.html"
+  }
+}

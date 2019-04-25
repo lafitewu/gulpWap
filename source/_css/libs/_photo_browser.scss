@@ -1,0 +1,59 @@
+.photo-browser-popup {
+  z-index: 10800;
+}
+
+.photo-browser-popup .photo-browser header.bar.bar-nav {
+  background-color: #4A4949;
+  color: #fff;
+}
+
+.photo-browser-popup .photo-browser .bar.bar-tab {
+  height: 0;
+  overflow: hidden;
+  display: none!important;
+}
+
+.photo-browser-popup .photo-browser .bar-tab~.content {
+  bottom: 0;
+}
+
+.photo-browser-popup .photo-browser header.bar.bar-nav .title {
+  color: #fff;
+}
+
+.photo-browser-popup .photo-browser .photo-browser-slide span.photo-browser-zoom-container {
+  height: 100%;
+}
+
+.photo-browser-popup .photo-browser .photo-browser-slide.swiper-slide-active img, .photo-browser-popup .photo-browser .photo-browser-slide.swiper-slide-next img, .photo-browser-popup .photo-browser .photo-browser-slide.swiper-slide-prev img {
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.photo-browser-popup .photo-browser header.bar.bar-nav .iconfont {
+    padding: 0 .5rem;
+    position: relative;
+    z-index: 20;
+    line-height: 2.2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.photo-browser-popup .photo-browser .bar-tab ~ .content{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.photo-browser-dark .photo-browser-swiper-container{
+  background: #4A4949;
+}
+
+.icon-jiantouxiangzuo:before  { content: "\e616"; } 

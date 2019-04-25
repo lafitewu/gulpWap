@@ -1,0 +1,6 @@
+.popup.popup-header-nav(data-overlay='popup-list-overlay')
+	ul
+		- var header_nav =  site.data.popup_header_nav
+			each header_list_nav in header_nav
+				li
+					a(href="#{header_list_nav.href}",title="") #{header_list_nav.title}

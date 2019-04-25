@@ -1,0 +1,41 @@
+doctype html
+html
+	block page
+	include ../_includes/_head
+	body(class= page.body_class ?  '#{page.body_class}' : '')
+		if page.head_no
+		else
+			// header begin
+			if page.header2
+				include ../_includes/_header2
+			else
+				include ../_includes/_header
+
+			.hh-header-height
+			// header end
+
+		block body
+		// main end
+
+		if page.foot_no
+		else
+			// footer begin
+			include ../_includes/_footer
+			// footer end
+
+		block popup
+
+		if page.top_no
+		else
+			//- to-top
+			include  ../_includes/_go_top
+
+		block extend
+
+
+		if page.go_top == true
+			// go_top begin
+			//- include ../_includes/_com_go_top
+			// go_top end
+
+		include ../_includes/_foot

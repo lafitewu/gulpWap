@@ -1,0 +1,17 @@
+extends _layouts/_default
+block page
+  - var page = site.data.pages.index
+block body
+  //- 这里是页面内容区
+  .clearfix
+    h6(style="padding:.8rem;font-size:.8rem;border-bottom:1px solid #ddd;") 住宅网WAP页面列表
+    ul.row
+      - var index = 0;
+      each item,key in site.data.pages
+        if index > 0
+          li.col-33(style="border-bottom:1px solid #ddd; white-space: nowrap;overflow:hidden;")
+            a(href=item.href ? item.href : key+'.html' class=item.href ? "external" : "",style="display: block;padding:.5rem .3rem;font-size:.6rem;") #{item.name}
+        - index = index + 1;
+
+
+

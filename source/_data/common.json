@@ -1,0 +1,12 @@
+{
+  "title": "zpg_wap",
+
+  "charset": "utf-8",
+
+  "lang": "zh-CN",
+
+  "paths": {
+    "js": ["js/vendor/vendor.min.js"],
+    "css": ["css/vendor/vendor.min.css"]
+  }
+}

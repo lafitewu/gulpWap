@@ -1,0 +1,54 @@
+.news-searchbar-wrap{
+	background: #DDDDDD;
+}
+
+.news-searchbar-inner{
+	display: flex;
+	.search-input-wrap{
+		flex: 1;
+    position: relative;
+
+   .news-search-input{
+   	background: #fff;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 2px;
+    width: 100%;
+    font-size: .7rem;
+    letter-spacing: -.15px;
+    height: 1.5rem;
+    // line-height: 1.5rem;
+    padding: .3rem 0 .3rem 1.5rem;
+    display: block;
+   }
+
+   i{
+	   	position: absolute;
+	    top: .35rem;
+	    left: .4rem;
+	    color:  #8E8E93;
+	    line-height: .7rem;
+	    z-index: 10;
+   }
+	}
+
+	.search-input-right{
+    margin-left: .25rem;
+    width: 2.8rem;
+  	height: 1.5rem;
+    .news-search-btn{
+    	display: block;
+    	width: 100%;
+    	height: 100%;
+    	background: #FFFFFF;
+			border: 1px solid $main-color;
+			border-radius: 2px;
+			text-align: center;
+			line-height: 1.5rem;
+			font-size: 16px;
+			color: $main-color;
+			letter-spacing: -0.17px;
+    }
+	}
+}

@@ -1,0 +1,45 @@
+'use strict';
+
+var fs = require('fs');
+var path = require('path');
+var foldero = require('foldero');
+var jade = require('jade');
+
+module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) {
+  var dirs = config.directories;
+  var dest = path.join(taskTarget);
+  var dataPath = path.join(dirs.source, dirs.data);
+  var pagesPath = path.join(dirs.source, dirs.jade);
+
+  // Jade template compile
+  gulp.task('generate-json', function() {
+    var siteData = {};
+    if (fs.existsSync(pagesPath)) {
+      // Convert directory to JS Object
+      var json = {};
+      siteData = foldero(pagesPath, {
+        recurse: true,
+        whitelist: '(.*/)*.+\.(jade)$',
+        calculateName: path.basename,
+        loader: function loadAsString(file) {
+          try {
+            var filename = path.basename(file, '.jade');
+            // console.log("name is:" + path.basename(file, '.jade'));
+            // console.log("first is:" + filename[0]);
+            if (filename[0] != "_") {
+              json[filename] = filename + '.html';
+            }
+          } catch (e) {
+            console.log('Error Parsing JSON file: ' + file);
+            console.log('==== Details Below ====');
+            console.log(e);
+          }
+        }
+      });
+
+      // console.log(JSON.stringify(json));
+      fs.writeFile(dataPath + '/pages.json', JSON.stringify(json),'utf8');
+      return json;
+    }
+  });
+};

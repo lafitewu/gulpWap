@@ -1,0 +1,16 @@
+head
+	title #{page.title}
+	meta(charset=site.data.common.charset)
+	meta(http-equiv='X-UA-Compatible', content='IE=edge')
+	meta(name='description', content='Ratchet: Build mobile apps with simple HTML, CSS, and JS components.')
+	meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+	link(rel='shortcut icon', href='/favicon.ico')
+	meta(name='apple-mobile-web-app-capable', content='yes')
+	meta(name='apple-mobile-web-app-status-bar-style', content='black')
+	meta(name="HandheldFriendly" content="true")
+	each val in site.data.common.paths.css
+		link(href="#{val}", rel="stylesheet")
+	block styles
+	link(href="css/main.css",rel="stylesheet")
+	link(href="fonts/iconfont.css",rel="stylesheet")
+	block styles2

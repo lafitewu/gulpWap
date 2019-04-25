@@ -1,0 +1,43 @@
+.flow-timeline{
+	padding: 1rem .8rem;
+	li{
+		display: flex;
+		margin-bottom: 1rem;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&:nth-child(2n+1){
+			.icon-wrap{
+				background: #7ED321;
+			}
+		}
+	}
+
+	.icon-wrap{
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 2rem;
+		color: #fff;
+		background: #F5AB2F;
+		i{
+			display: block;
+	    font-size: 1.2rem;
+		}
+	}
+
+	.text-wrap{
+		flex: 1;
+		font-size: .7rem;
+		padding-left: .5rem;
+		.text-1{
+			font-weight: bold;
+			color: #4A4A4A;
+		}
+		.text-2{
+			color: #777;
+			line-height: .9rem;
+		}
+	}
+}
